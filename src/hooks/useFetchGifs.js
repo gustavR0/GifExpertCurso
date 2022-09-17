@@ -8,6 +8,7 @@ export const useFetchGifs = ( category ) => {
     });
 
     useEffect( () => {
+        console.log('send: '+ category)
         getGif(category)
             .then( img => {
                 setState({
